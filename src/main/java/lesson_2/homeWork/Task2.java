@@ -13,7 +13,7 @@ public class Task2 {
         Ответ: "select * from students where name =
         'Ivanov' and country = 'Russia' and city = 'Moscow'" для приведенного примера
          */
-        File file = new File("C:/MyLearning/java/Seminar_2/sql.json");
+        File file = new File("C:/MyLearning/java/JavaGeekBrains/src/main/java/lesson_2/homeWork/sql.json");
         String data = fileReader(file);
         String[] array = arrayInfo(data);
         String getSql = sql(array);
