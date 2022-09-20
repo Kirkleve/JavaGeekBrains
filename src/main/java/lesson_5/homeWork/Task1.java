@@ -10,9 +10,10 @@ import java.util.Map;
 
 public class Task1 {
     public static Map<String, LinkedList<String>> phoneBook = new HashMap<>();
+
     public static void addItem(String name, String phoneNumber) {
         LinkedList<String> item;
-        if(phoneBook.containsKey(name)) {
+        if (phoneBook.containsKey(name)) {
             item = phoneBook.get(name);
             item.add(phoneNumber);
         } else {
@@ -22,9 +23,9 @@ public class Task1 {
         }
     }
 
-    public static String formatOutput (Map<String, LinkedList<String>> phoneBook) {
+    public static String formatOutput() {
         StringBuilder output = new StringBuilder();
-        for (Map.Entry<String, LinkedList<String>> item: Task1.phoneBook.entrySet()) {
+        for (Map.Entry<String, LinkedList<String>> item : Task1.phoneBook.entrySet()) {
             output.append(item.getKey()).append(":\n");
             output.append(item.getValue().toString()).append("\n");
         }
@@ -37,6 +38,6 @@ public class Task1 {
         addItem("igor", "2352352323");
         addItem("Kirill", "89520565555");
         phoneBook.remove("igor");
-        System.out.println(formatOutput(phoneBook));
+        System.out.println(formatOutput());
     }
 }

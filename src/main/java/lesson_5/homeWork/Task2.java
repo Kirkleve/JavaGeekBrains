@@ -5,21 +5,20 @@ import java.nio.file.Path;
 import java.util.*;
 
 public class Task2 {
-    public static void main (String[] args) {
-        Map<String, Integer> peopleCountName = new HashMap <>();
+    public static void main(String[] args) {
+        Map<String, Integer> peopleCountName = new HashMap<>();
         List<String> peopleName;
         try {
             peopleName = Files.readAllLines(Path.of("C:\\MyLearning\\java\\JavaGeekBrains\\src\\main\\java\\lesson_5\\homeWork\\peopleList.txt"));
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
             System.out.println("Не удалось прочитать файл.");
             return;
         }
 
-        for (String name: peopleName) {
+        for (String name : peopleName) {
             String firstName = name.split(" ")[0];
-            if(peopleCountName.containsKey(firstName))
-                peopleCountName.put(firstName, peopleCountName.get(firstName)+1);
+            if (peopleCountName.containsKey(firstName))
+                peopleCountName.put(firstName, peopleCountName.get(firstName) + 1);
             else
                 peopleCountName.put(firstName, 1);
         }
