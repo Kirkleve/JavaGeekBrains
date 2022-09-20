@@ -6,7 +6,6 @@ package lesson_5.homeWork;
 
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 
 public class Task1 {
@@ -22,10 +21,22 @@ public class Task1 {
             phoneBook.put(name, item);
         }
     }
+
+    public static String formatOutput (Map<String, LinkedList<String>> phoneBook) {
+        StringBuilder output = new StringBuilder();
+        for (Map.Entry<String, LinkedList<String>> item: Task1.phoneBook.entrySet()) {
+            output.append(item.getKey()).append(":\n");
+            output.append(item.getValue().toString()).append("\n");
+        }
+        return output.toString();
+    }
+
     public static void main(String[] args) {
         addItem("Max", "325235235");
         addItem("Max", "236326236");
         addItem("igor", "2352352323");
-        System.out.println(phoneBook);
+        addItem("Kirill", "89520565555");
+        phoneBook.remove("igor");
+        System.out.println(formatOutput(phoneBook));
     }
 }
