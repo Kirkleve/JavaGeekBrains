@@ -19,11 +19,9 @@ public class BottleOfWater extends Product {
 
     @Override
     public String toString() {
-        return "BottleOfWater{" +
-               "name='" + super.getName() + '\'' +
-               "volume='" + this.volume + '\'' +
-               ", cost=" + super.getCost() +
-               '}';
+        return super.getName() + ' '
+                + this.volume + "л., "
+                + super.getCost() + "руб.";
     }
 
     @Override
@@ -38,7 +36,7 @@ public class BottleOfWater extends Product {
         BottleOfWater that = (BottleOfWater) o;
 
         return super.getName().equalsIgnoreCase(that.getName())
-               && super.getCost() == that.getCost()
-               && getVolume().equals(that.getVolume());
+                && super.getCost() == that.getCost()
+                && getVolume().equals(that.getVolume());
     }
 }

@@ -19,7 +19,7 @@ public class HotWaterVendingMachine implements VendingMachine {
         throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
     }
 
-    public HotWater getProduct(String name, double volume) throws IllegalStateException{
+    public HotWater getProduct(String name, double volume) throws IllegalStateException {
         for (Product product : products) {
             if (product instanceof HotWater) {
                 if (product.getName().equalsIgnoreCase(name) && ((HotWater) product).getVolume() == volume) {
@@ -30,7 +30,7 @@ public class HotWaterVendingMachine implements VendingMachine {
         throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
     }
 
-    public HotWater getProduct(String name, double volume, int temperature) throws IllegalStateException{
+    public HotWater getProduct(String name, double volume, int temperature) throws IllegalStateException {
         for (Product product : products) {
             if (product instanceof HotWater) {
                 if (product.getName().equalsIgnoreCase(name) && ((HotWater) product).getVolume() == volume && ((HotWater) product).getTemperature() == temperature) {

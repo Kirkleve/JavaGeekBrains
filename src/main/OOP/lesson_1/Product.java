@@ -21,15 +21,11 @@ public abstract class Product {
         return cost;
     }
 
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-
     @Override
     public String toString() {
         return "Product{" +
-               "name='" + name + '\'' +
-               ", cost=" + cost +
-               '}';
+                "name='" + name + '\'' +
+                ", cost=" + cost +
+                '}';
     }
 }

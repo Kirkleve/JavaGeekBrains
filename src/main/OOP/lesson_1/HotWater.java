@@ -1,7 +1,6 @@
 package lesson_1;
 
-public class HotWater extends BottleOfWater{
-
+public class HotWater extends BottleOfWater {
     private int temperature;
 
     public HotWater(String name, double cost, Double volume, int temperature) {
@@ -19,11 +18,9 @@ public class HotWater extends BottleOfWater{
 
     @Override
     public String toString() {
-        return "HotWater{" +
-                "name = '" + super.getName() + '\'' +
-                " volume='" + super.getVolume() + '\'' +
-                ", cost=" + super.getCost() +
-                ", temperature=" + temperature +
-                '}';
+        return super.getName() + ' '
+                + super.getVolume() + "л., "
+                + super.getCost() + "руб., t = "
+                + temperature + "°C";
     }
 }
