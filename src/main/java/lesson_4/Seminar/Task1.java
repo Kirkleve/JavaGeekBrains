@@ -1,6 +1,5 @@
-package lesson_4.lesson;
+package lesson_4.Seminar;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.LinkedList;
 

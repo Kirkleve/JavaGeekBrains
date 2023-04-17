@@ -1,7 +1,4 @@
-package lesson_4.lesson;
-
-import javax.swing.*;
-import java.util.LinkedList;
+package lesson_4.Seminar;
 
 public class Stack<T> {
     private T[] array;
