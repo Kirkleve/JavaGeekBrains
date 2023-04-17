@@ -1,4 +1,4 @@
-package lesson_4.Seminar.data;
+package lesson_4.data;
 
 import java.util.Comparator;
 
@@ -8,6 +8,11 @@ public class Teacher extends User {
 
     public Teacher(String firstName, String secondName, String patronymic, String dateOfBirth) {
         super(firstName, secondName, patronymic, dateOfBirth);
+    }
+
+    public Teacher(String firstName, String secondName, String patronymic, String dateOfBirth, Long teacherId) {
+        super(firstName, secondName, patronymic, dateOfBirth);
+        this.teacherId = teacherId;
     }
 
     public Long getTeacherId() {

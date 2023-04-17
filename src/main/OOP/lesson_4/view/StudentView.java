@@ -1,7 +1,7 @@
-package lesson_4.Seminar.view;
+package lesson_4.view;
 
-import lesson_4.Seminar.data.Student;
-import lesson_4.Seminar.data.StudentGroup;
+import lesson_4.data.Student;
+import lesson_4.data.StudentGroup;
 
 import java.util.List;
 import java.util.logging.Logger;

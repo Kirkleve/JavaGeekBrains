@@ -1,4 +1,4 @@
-package lesson_4.Seminar.data;
+package lesson_4.data;
 
 import java.util.List;
 

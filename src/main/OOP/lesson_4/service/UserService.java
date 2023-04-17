@@ -1,9 +1,9 @@
-package lesson_4.Seminar.controller;
-
-import lesson_4.Seminar.data.User;
+package lesson_4.service;
 
 import java.time.LocalDate;
+import java.util.List;
 
-public interface UserController<T extends User>{
+public interface UserService<T> {
+    List<T> getAll();
     void create(String firstName, String secondName, String patronymic, String dateOfBirth);
 }

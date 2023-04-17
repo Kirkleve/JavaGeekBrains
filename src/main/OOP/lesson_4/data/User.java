@@ -1,4 +1,4 @@
-package lesson_4.Seminar.data;
+package lesson_4.data;
 
 public class User {
     private String firstName;

@@ -1,4 +1,4 @@
-package lesson_4.Seminar;
+package lesson_4;
 
 public class Stack<T> {
     private T[] array;

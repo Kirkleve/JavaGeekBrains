@@ -1,9 +1,9 @@
-package lesson_4.Seminar.service;
+package lesson_4.service;
 
-import lesson_4.Seminar.data.Student;
-import lesson_4.Seminar.data.UserComparator;
-import lesson_4.Seminar.data.StudentGroup;
-import lesson_4.Seminar.data.Teacher;
+import lesson_4.data.Student;
+import lesson_4.data.UserComparator;
+import lesson_4.data.StudentGroup;
+import lesson_4.data.Teacher;
 
 import java.util.ArrayList;
 import java.util.Collections;

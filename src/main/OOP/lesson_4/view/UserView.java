@@ -1,6 +1,6 @@
-package lesson_4.Seminar.view;
+package lesson_4.view;
 
-import lesson_4.Seminar.data.User;
+import lesson_4.data.User;
 
 import java.util.List;
 

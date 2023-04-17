@@ -1,6 +1,6 @@
-package lesson_4.Seminar.service;
+package lesson_4.service;
 
-import lesson_4.Seminar.data.Student;
+import lesson_4.data.Student;
 
 
 import java.util.ArrayList;

@@ -1,12 +1,11 @@
-package lesson_4.Seminar.controller;
+package lesson_4.controller;
 
-import lesson_4.Seminar.data.Student;
-import lesson_4.Seminar.data.Teacher;
-import lesson_4.Seminar.service.StudentGroupService;
-import lesson_4.Seminar.service.StudentService;
-import lesson_4.Seminar.view.StudentView;
+import lesson_4.data.Student;
+import lesson_4.data.Teacher;
+import lesson_4.service.StudentGroupService;
+import lesson_4.service.StudentService;
+import lesson_4.view.StudentView;
 
-import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 

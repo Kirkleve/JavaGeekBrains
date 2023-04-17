@@ -1,6 +1,4 @@
-package lesson_4.Seminar.data;
-
-import java.time.LocalDate;
+package lesson_4.data;
 
 public class Student extends User implements Comparable<Student>{
     private Long studentId;

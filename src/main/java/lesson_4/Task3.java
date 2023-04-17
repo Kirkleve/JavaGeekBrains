@@ -1,4 +1,4 @@
-package lesson_4.Seminar;
+package lesson_4;
 
 import java.util.Iterator;
 import java.util.LinkedList;
