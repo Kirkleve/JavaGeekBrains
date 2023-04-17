@@ -1,5 +1,6 @@
-package lesson_4.data;
+package lesson_4.service;
 
+import lesson_4.data.Teacher;
 import lesson_4.service.UserService;
 
 import java.util.ArrayList;

@@ -3,6 +3,7 @@ package lesson_4;
 import lesson_4.data.Student;
 import lesson_4.data.Teacher;
 import lesson_4.data.UserComparator;
+import lesson_4.service.TeacherService;
 import lesson_4.view.StudentView;
 import lesson_4.view.TeacherView;
 
@@ -21,5 +22,6 @@ public class main {
         TeacherView teacherView = new TeacherView();
         teacherView.sendOnConsole(List.of(new Teacher("Mariy", "Petrovova", "fafaw", "14.4.4121")));
         System.out.println(teacherView);
+        TeacherService serves = new TeacherService();
     }
 }
