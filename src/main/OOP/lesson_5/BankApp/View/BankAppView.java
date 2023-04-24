@@ -77,7 +77,7 @@ public class BankAppView {
         System.out.println("Неверный выбор!");
     }
 
-    public void exit(){
+    public void exit() {
         System.out.println("Выход...");
     }
 }
