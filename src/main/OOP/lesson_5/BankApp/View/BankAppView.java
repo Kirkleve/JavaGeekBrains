@@ -14,27 +14,31 @@ public class BankAppView {
     }
 
     public void startMessage() {
-        System.out.println("Есть ли у вас аккаунт?");
+        System.out.println("Выберете действие: ");
 
     }
 
     public String innEmail() {
-        System.out.print("Введите ваш email: ");
+        System.out.print("Введите email: ");
         return scanner.next();
     }
 
     public String innPassword() {
-        System.out.print("Введите ваш пароль: ");
+        System.out.print("Введите пароль: ");
         return scanner.next();
     }
 
     public String innName() {
-        System.out.println("Введите ваше имя: ");
+        System.out.println("Введите имя: ");
         return scanner.next();
     }
 
+    public void createComplete() {
+        System.out.println("Логин создан!");
+    }
+
     public int innDeposit() {
-        System.out.println("Ваш депозит: ");
+        System.out.println("Депозит: ");
         return scanner.nextInt();
     }
 
@@ -46,7 +50,12 @@ public class BankAppView {
     }
 
     public int getChoiceLogin() {
-        System.out.print("Выберете: \n1 - да\n2 - нет\n");
+        System.out.print("Выберете: \n" +
+                "1 - Вход\n" +
+                "2 - Создать логин и пароль\n" +
+                "3 - Удалить логин\n" +
+                "4 - Показать пользователей\n" +
+                "5 - Выход\n");
         return scanner.nextInt();
     }
 
@@ -66,5 +75,9 @@ public class BankAppView {
 
     public void errorChose() {
         System.out.println("Неверный выбор!");
+    }
+
+    public void exit(){
+        System.out.println("Выход...");
     }
 }

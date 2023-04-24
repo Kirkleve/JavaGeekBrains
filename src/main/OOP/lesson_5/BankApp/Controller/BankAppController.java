@@ -16,7 +16,7 @@ public class BankAppController {
     public void start() {
         bankAppView.welcomeMessage();
         int choice = -1;
-        while (choice != 1 && choice != 2) {
+        while (choice != 5) {
             bankAppView.startMessage();
             choice = bankAppView.getChoiceLogin();
             switch (choice) {
@@ -25,6 +25,16 @@ public class BankAppController {
                     break;
                 case 2:
                     createLogin();
+                    break;
+                case 3:
+                    userController.removeUser(userController.getUserByEmail(bankAppView.innEmail()));
+                    System.out.println("Пользователь удалён!");
+                    break;
+                case 4:
+                    System.out.println(userController.getUsers());
+                    break;
+                case 5:
+                    bankAppView.exit();
                     break;
                 default:
                     bankAppView.errorChose();
@@ -47,7 +57,7 @@ public class BankAppController {
 
     private void createLogin() {
         userController.addUser(bankAppView.innName(), bankAppView.innEmail(), bankAppView.innPassword(), bankAppView.innDeposit());
-        runBankApp(inputLogin());
+        bankAppView.createComplete();
     }
 
     private void runBankApp(User user) {
@@ -66,7 +76,7 @@ public class BankAppController {
                     System.out.println("Ваш баланс: " + user.getBalance());
                     break;
                 case 4:
-                    System.out.println("Выход...");
+                    bankAppView.exit();
                     break;
                 default:
                     bankAppView.errorChose();

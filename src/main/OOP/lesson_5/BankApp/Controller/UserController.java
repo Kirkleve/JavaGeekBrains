@@ -45,4 +45,11 @@ public class UserController {
             System.out.println("Недостаточно средств для вывода.");
         }
     }
+
+    @Override
+    public String toString() {
+        return "All Users{"+
+                users +
+                '}';
+    }
 }
